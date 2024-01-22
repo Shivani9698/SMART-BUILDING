@@ -2,7 +2,7 @@
 // See the Device Info tab or Template settings
 #define BLYNK_TEMPLATE_ID "TMPL36a_ZUDO6"
 #define BLYNK_TEMPLATE_NAME "HOME AUTOMATION"
-#define BLYNK_AUTH_TOKEN "eNjIjpM38fJQSqFWpYc-7c08UWN_OJy_"
+#define BLYNK_AUTH_TOKEN "f43z9Jc9-n1yNvEVCCAMG4ovj5P83Y9p"
 
 // Comment this out to disable prints and save space
 #define BLYNK_PRINT Serial
@@ -15,12 +15,12 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials
 // Set password to "" for open networks
-char ssid[] = "FTTHBSNL";
-char pass[] = "29915693";
+char ssid[] = "AirFiber";
+char pass[] = "Hnasetty09";
 
 BlynkTimer timer;
 
-#define DHTPIN D2     // Change this to the appropriate GPIO pin for your board
+#define DHTPIN 12     // Change this to the appropriate GPIO pin for your board
 #define DHTTYPE DHT11 // Change this to the appropriate DHT sensor type
 
 // Initialize DHT sensor
@@ -72,4 +72,3 @@ void loop() {
   Blynk.virtualWrite(V4, h);
   Blynk.virtualWrite(V5, t);
 }
-
